@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.header{
+    width: 100%;
+}
+.header-title{
+    font-size:22px;
+    color: white;
+    font-family: system-ui;
+    padding-bottom: 10px;
+    
+}
+.size-img{
+   
+    border-radius: 8px;
+}
+.draggable {
+
+    font-weight: 800;
+    height: 50px;
+    list-style-type: none;
+    margin: 5px;
+    background-color: white;
+    width: 90%;
+    line-height: 3.2;
+    padding-left: 10px;
+    transition: all 200ms;
+    user-select: none;
+    margin: 0px auto;
+    margin-top: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+.content{
+    width: 100%;
+    display: flex;
+    max-height: 100%;
+}
+
+.apptrello{
+    width: 20%;
+    padding: 0.3%;
+    margin-left: 10px;
+    background-color: brown;
+    border-radius: 8px;
+    float: left;
+    margin-top: 10px;
+}
+.content-entities{
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0px;
+    list-style: none;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+ 
+}
+ul li{
+    border: 1px solid gray;
+ 
+    display: flex;
+    justify-content: space-between;
+}
+.case{
+    min-width: 500px;
+    height: 500px;
+    background-color:brown ;
+}
+.over{
+    transform: scale(1.1);
+}
+.input-EditCard{
+    width: 20%;
+    min-height: 200px;
+    position:absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.footer{
+    width: 100%;
+    min-height: 30px;
+    margin: auto ;
+    display: flex;
+    margin-top: 5px;
+    
+}
+.btn-addCard{
+    margin-right: 5px;
+    border-radius: 8px;
+    padding: 5px;
+    border: none;
+}
+.btn-delete{
+    width: 10%;
+    float: right;
+    height: 50%;
+    margin: auto 0px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-delete:hover{
+    background-color: red;
+}
+.inputEdit{
+    width: 90%;
+    border-radius: 8px;
+    border: 1px solid gray;
+    height: 50px;
+    margin: 10px auto;
+    padding-left: 10px;
+}
+.footer input{
+    width: 60%;
+    margin-right: 5px;
+}
+.btn-addTab{
+    width: 15%;
+}
+@media only screen and (max-width: 600px) {
+    .apptrello{
+        width: 100%;
+        margin: 0px;
+        margin-top: 5px;
+        max-height: 100vh;
+    }
+ 
+  }

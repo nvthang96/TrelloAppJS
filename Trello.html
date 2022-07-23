@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trello.css">
+
+</head>
+<body ondrop="dropTask(event)" id="main" ondragover="allowDrop(event)" class="dropTask">
+  <div data="task1" class="apptrello" draggable="true" >
+    <div class="header">
+      <div class="header-title">App 1</div>
+      <div class="body-img"><img class="size-img" width="100%" src="thum.jpg"/></div>
+    </div>
+    <div class="content">
+    <ul data="task1" id="Entites" ondrop="dropul(event)" ondragover="allowDrop(event)" class="content-entities">
+      <li data="task1" ondblclick="handleEditCard(event)"  class="draggable" draggable="true">Text1
+        <button onclick="handleDelete(event)" class="btn-delete" >X</button>
+      </li>
+      <li data="task1" ondblclick="handleEditCard(event)"  class="draggable" draggable="true">Text2
+        <button onclick="handleDelete(event)" class="btn-delete" >X</button>
+      </li>
+    </ul>
+    </div>
+    <div data="task1" class="footer"><button data="task1" onclick="handleOnclickaddCard(event)" class="btn-addCard">+Card</button><input data="task1"  class="inputCard" type="text">
+      <button onclick="handleOnclickaddTab(event)" class="btn-addTab">+Tab</button></div>
+ </div>
+<div class="tab-edit"><textarea class="input-EditCard"></textarea></div>
+</body>
+<script src="DragDrop.js"></script>
+</html>
